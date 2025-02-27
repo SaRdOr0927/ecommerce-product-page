@@ -40,7 +40,7 @@ function toggleCart() {
         cart.style.display = "none";
     }
 }
-
+//
 function updateUI() {
     document.getElementById("quantity").innerText = quantity;
     document.getElementById("cart-count").innerText = cartCount;
