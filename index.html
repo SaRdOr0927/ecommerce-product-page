@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>ecommerce-product-page</title>
+</head>
+<body>
+    
+    <div class="site-headr">
+        <div class="site-menu">
+            <div class="menu-info">
+                <img src="./IMG/sneakers 2.svg" alt="sneakers">
+                <span class="menu-info__link">
+                    <a href="#!"><p class="info-link__p">Collections</p></a>
+                    <a href="#!"><p class="info-link__p">Men</p></a>
+                    <a href="#!"><p class="info-link__p">Women</p></a>
+                    <a href="#!"><p class="info-link__p">About</p></a>
+                    <a href="#!"><p class="info-link__p">Contact</p></a>
+                </span>
+            </div>
+            <div class="site-menu__shop">
+                <div class="cart-icon" onclick="toggleCart()">
+                    <img src="./IMG/savatshop.svg" alt="savatcha" id="menu__shop">
+                    <span id="cart-count" class="cart-count">0</span>
+                    <div class="cart" id="cart">
+                        <h3 >Cart</h3>
+                        <div id="cart-items"></div>
+                        <div class="checkout" onclick="checkout()">Checkout</div>
+                        
+                    </div>
+                </div>
+                <img src="./IMG/Oval (2).svg" alt="Oval" id="menu-shop__avatar">
+            </div>
+        </div>
+        <div class="site-abount">
+            <div class="abount-phote">
+                <img src="./IMG/phote1.png" alt="phote1" id="abount-phote__img">
+                <div class="abount-phote__img__menu">
+                    <img src="./IMG/phote1.png" alt="Rectangle" id="abount-phote__img__menu__icon">
+                    <img src="./IMG/Rectangle Copy 2 (1).png" alt="Rectangle" id="abount-phote__img__menu__icon">
+                    <img src="./IMG/Rectangle Copy 3.png" alt="Rectangle" id="abount-phote__img__menu__icon">
+                    <img src="./IMG/Rectangle Copy 4.png" alt="Rectangle" id="abount-phote__img__menu__icon">
+                </div>
+            </div>
+            <div class="abount-text">
+                <img src="./IMG/Sneaker Company.svg" alt="Sneaker Company">
+                <h1 class="Sneaker">Fall Limited Edition Sneakers</h1>
+                <p class="Sneaker-text">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                <div class="price">
+                    <div class="price-flex">
+                        <h1 class="exact-price">$125.00</h1>
+                        <p class="price-percent">50%</p>
+                    </div>
+                    <img src="./IMG/$250.00 (1).svg" alt="$250.00">
+                </div>
+                <div class="add-to-cart__flex">
+                    <div class="cart-container">
+                        <button class="button" onclick="decreaseQuantity()"><img src="./IMG/Group 4.svg" alt=""></button>
+                        <span id="quantity">0</span>
+                        <button class="button" onclick="increaseQuantity()"><img src="./IMG/plus.svg" alt=""></button>
+
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart()"><img src="./IMG/Shape.svg" alt=""> Add to cart</button>
+                </div>
+            </div>
+        </div>
+
+        
+        <p id="total-price">Total Price: $<span id="total-price">0</span></p>
+        
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="./main.js"></script>
+    </div>
+        
