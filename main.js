@@ -8,14 +8,12 @@ function increaseQuantity() {
     quantity++;
     updateUI();
 }
-
 function decreaseQuantity() {
     if (quantity > 0) {
         quantity--;
     }
     updateUI();
 }
-
 function addToCart() {
     if (quantity > 0) {
         cartCount += quantity;
@@ -25,7 +23,6 @@ function addToCart() {
         updateUI();
     }
 }
-
 function toggleCart() {
     const cart = document.getElementById("cart");
     if (cartItems.length > 0) {
@@ -40,7 +37,6 @@ function toggleCart() {
         cart.style.display = "none";
     }
 }
-//
 function updateUI() {
     document.getElementById("quantity").innerText = quantity;
     document.getElementById("cart-count").innerText = cartCount;
@@ -55,17 +51,28 @@ function updateUI() {
 function checkout() {
     const cartItems = document.getElementById("cart-items");
     if (cartItems) {
-        cartItems.innerHTML = ""; // Savatchani bo‘shatish
+        cartItems.innerHTML = ""; 
     }
     const cartTotal = document.getElementById("cart-total");
     if (cartTotal) {
-        cartTotal.textContent = "$0.00"; // Umumiy narxni $0 qilish
+        cartTotal.textContent = "$0.00"; 
     }
-    location.reload(); // Sahifani yangilash
+    location.reload(); 
 }
 
 
+const abountPhoteImg = document.querySelector("#abount-phote__img")
+const imgActive = document.querySelector(".img-active")
+const close = document.querySelector(".close")
+const body = document.querySelector("body")
 
+
+abountPhoteImg.addEventListener('click', function() {
+    imgActive.style.display = "block";
+})
+close.addEventListener('click', function() {
+    imgActive.style.display = "none";
+})
 
 // Savatchadan mahsulot o‘chirish
 
