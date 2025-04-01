@@ -5,6 +5,9 @@ body {
     justify-content: center;
     background: #fff;
     padding: 28px 165px 132px 165px;
+    zoom: 1; /* Ba’zi brauzerlarda ishlaydi */
+    transform: scale(1); /* Sahifani 100% saqlaydi */
+    transform-origin: top left;
 }
 
 
